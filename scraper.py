@@ -6,7 +6,7 @@ import os
 
 app = Flask(__name__)
 
-#num = 100
+num = 0
 
 @app.route("/")
 def scraper():
