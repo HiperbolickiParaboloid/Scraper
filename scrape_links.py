@@ -34,6 +34,5 @@ def scrape_links(page_link):
             stan = scrape_page.scrape_page(link)
             mycol.insert_one(stan)
             print(scrape_page.scrape_page(link))
-        '''else:
-            br = br + 1
-            print(br)'''
+        else:
+            print("Already scraped.")
