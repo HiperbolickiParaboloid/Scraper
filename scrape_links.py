@@ -32,5 +32,3 @@ def scrape_links(page_link):
             stan = scrape_page.scrape_page(link)
             mycol.insert_one(stan)
             print(scrape_page.scrape_page(link))
-        else:
-            print("REALNO")
