@@ -35,4 +35,4 @@ def scrape_links(page_link):
             mycol.insert_one(stan)
             print(scrape_page.scrape_page(link))
         else:
-            print("Already scraped"+link)
+            print("Already scraped "+link)
