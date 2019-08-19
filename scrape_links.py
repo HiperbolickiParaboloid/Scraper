@@ -25,7 +25,7 @@ def scrape_links(page_link):
             lista_linkova.append(link["href"])
     lista_linkova = list(dict.fromkeys(lista_linkova))
 
-    br = 0
+    #br = 0
     
     for link in lista_linkova:
         idd = ajdi(link)
@@ -34,6 +34,6 @@ def scrape_links(page_link):
             stan = scrape_page.scrape_page(link)
             mycol.insert_one(stan)
             print(scrape_page.scrape_page(link))
-        else:
+        '''else:
             br = br + 1
-            print(br)
+            print(br)'''
