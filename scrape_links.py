@@ -9,7 +9,7 @@ def scrape_links(page_link):
         int_ajdi = int(lista[1])
         return int_ajdi
 
-    myclient = pymongo.MongoClient("mongodb://app143467177/")
+    myclient = pymongo.MongoClient("mongodb+srv://mirko:admin@scrapermirko-3rjq2.mongodb.net/test?retryWrites=true&w=majority")
     mydb = myclient["Realitica"]
     mycol = mydb["Accommodation"]
 
