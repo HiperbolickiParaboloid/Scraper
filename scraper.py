@@ -6,11 +6,9 @@ import os
 
 app = Flask(__name__)
 
-num = 0
-
 @app.route("/")
 def scraper():
-    num = 100
+    num = 0
     link_part_one = "https://www.realitica.com/?cur_page="
     link_part_two = "&for=DuziNajam&pZpa=Crna+Gora&pState=Crna+Gora&type%5B%5D=&lng=hr"
 
